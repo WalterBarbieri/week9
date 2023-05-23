@@ -1,4 +1,4 @@
-/* PRIMA PROVA MA HO FATTO TUTTO CON PROPRIETA'
+/* PRIMA PROVA MA HO FATTO TUTTO CON PROPRIETA', POI MI SONO ACCORTO CHE LA TRACCIA VOLEVA UNA PROPRIETA' E IL RESTO METODI
 
 class Wallet {
     deposit: number;
@@ -76,7 +76,7 @@ console.log(sonWallet.myBalance());
 console.log(motherWallet.myBalance());
 */
 
-/**TERZA PROVA CON METODI E DISPLAY */
+/**TERZA PROVA CON METODI E DISPLAY - FINALE */
 
 const sonButton: any = document.getElementById("sonButton");
 const motherButton: any = document.getElementById("motherButton");
