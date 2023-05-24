@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Week9 Day3</title>
+</head>
+
+<body>
+    <h1>Esercizio Week9 Day3</h1>
+    <h2>Calcolatore tassazione per Lavoratori Autonomi</h2>
+    <form>
+        <fieldset>
+            <legend>Calcola le tue tasse e il tuo reddito netto</legend>
+            <label for="ral">Reddito Annuo Lordo</label>
+            <input type="number" name="ral" id="ral" placeholder="ral" required>
+            <label for="codredd">Codice di Reddività</label>
+            <select name="codredd" id="codredd">
+                <option value="0.4">1° Fascia: 40%</option>
+                <option value="0.54">2° Fascia: 54%</option>
+                <option value="0.62">3° Fascia: 62%</option>
+                <option value="0.67">4° Fascia: 67%</option>
+                <option value="0.78">5° Fascia: 78%</option>
+                <option value="0.86">6° Fascia: 86%</option>
+            </select>
+            <label for="taxation">Tassazione Complessiva</label>
+            <input type="number" name="taxation" id="taxation" value="0" disabled>
+            <label for="netIncome">Reddito Annuo Netto</label>
+            <input type="number" name="netIncome" id="netIncome" value="0" disabled>
+            <button type="button" id="calculateButton">Calculate</button>
+        </fieldset>
+    </form>
+    <script src="./assets/js/index2.js"></script>
+</body>
+
+</html>

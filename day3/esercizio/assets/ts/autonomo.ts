@@ -53,3 +53,6 @@ console.log('Redditto Annuo Lordo: '+ lavAut5.ral + ' Tassazione totale: ' + (la
 
 let lavAut6 = new Autonomo6(100000);
 console.log('Redditto Annuo Lordo: '+ lavAut6.ral + ' Tassazione totale: ' + (lavAut6.getTasseInps() + lavAut6.getTasseIrpef()) + ' Reddito Annuo Netto: ' + lavAut6.getRedditoAnnuoNetto());
+
+
+
