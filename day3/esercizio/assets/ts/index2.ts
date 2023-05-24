@@ -25,12 +25,6 @@ class PIva {
   }
 }
 
-class Autonomo extends PIva {
-  constructor(_ral: number, _codredd: number) {
-    super(_ral, _codredd);
-  }
-}
-
 calculateButton.onclick = function () {
   const ral: any = document.getElementById("ral") as HTMLInputElement;
   let parsedRal = parseFloat(ral.value);
@@ -54,7 +48,7 @@ calculateButton.onclick = function () {
     "netIncome"
   ) as HTMLInputElement;
 
-  const lavoratore = new Autonomo(parsedRal, parsedCodredd);
+  const lavoratore = new PIva(parsedRal, parsedCodredd);
   taxation.value = (lavoratore.getTasseInps() + lavoratore.getTasseIrpef())
   netIncome.value = lavoratore.getRedditoAnnuoNetto();
   
