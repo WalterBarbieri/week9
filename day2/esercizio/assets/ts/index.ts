@@ -84,7 +84,7 @@ const motherButton: any = document.getElementById("motherButton");
 class Wallet {
   protected balance: number;
 
-  constructor(_balance: number = 0) {
+  constructor(_balance: number) {
     this.balance = _balance;
   }
   deposit(hardly: number) {
@@ -104,13 +104,13 @@ class Wallet {
 }
 
 class SonWallet extends Wallet {
-  constructor(_balance: number = 0) {
+  constructor(_balance: number) {
     super(_balance);
   }
 }
 
 class MotherWallet extends Wallet {
-  constructor(_balance: number = 0) {
+  constructor(_balance: number) {
     super(_balance);
   }
   addInterest() {
