@@ -1,27 +1,28 @@
+"use strict";
 function persona(nome, cognome, eta) {
     if (eta) {
-        return "Signor ".concat(nome, " ").concat(cognome, " di anni ").concat(eta);
+        return `Signor ${nome} ${cognome} di anni ${eta}`;
     }
     else {
-        return "Signor ".concat(nome, " ").concat(cognome);
+        return `Signor ${nome} ${cognome}`;
     }
 }
 console.log(persona('Dario', 'DelGiudice', 55));
 console.log(persona('Walter', 'Barbieri'));
-var mioCorso = function (nomeCorso, annoCorso) {
-    return "Corso ".concat(nomeCorso, " dell'anno ").concat(annoCorso);
+const mioCorso = (nomeCorso, annoCorso) => {
+    return `Corso ${nomeCorso} dell'anno ${annoCorso}`;
 };
 console.log(mioCorso('FS0223', 2023));
-var stati = {
+const stati = {
     nome: 'Italia',
     capitale: 'Roma',
-    descrizione: function () {
-        return "la capitale di ".concat(this.nome, " \u00E8 ").concat(this.capitale);
+    descrizione() {
+        return `la capitale di ${this.nome} è ${this.capitale}`;
     }
 };
 console.log(stati.descrizione());
-var divisione = function (val1, val2) {
-    var risultato = val1 / val2;
+const divisione = (val1, val2) => {
+    let risultato = val1 / val2;
     try {
         if (val2 === 0)
             throw new Error('Errore! Divisione per 0');
@@ -37,5 +38,5 @@ var divisione = function (val1, val2) {
         console.log('La gestione degli errori è stata eseguita');
     }
 };
-var risultato1 = divisione(4, 0);
-var risultato2 = divisione(4, 1);
+let risultato1 = divisione(4, 0);
+let risultato2 = divisione(4, 1);

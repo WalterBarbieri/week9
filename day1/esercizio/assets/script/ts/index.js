@@ -1,8 +1,9 @@
-var playButton = document.getElementById('playButton');
-var numeroEstratto = document.getElementById('numeroEstratto');
-var result = document.getElementById('result');
+"use strict";
+const playButton = document.getElementById('playButton');
+const numeroEstratto = document.getElementById('numeroEstratto');
+const result = document.getElementById('result');
 function lotto(player1, player2) {
-    var randomNumber = Math.floor(Math.random() * (10 - 1) + 1);
+    let randomNumber = Math.floor(Math.random() * (10 - 1) + 1);
     numeroEstratto.innerHTML = 'Numero Estratto: ' + randomNumber;
     if (player1 === player2 && player1 === randomNumber) {
         return result.innerHTML = 'Complimenti! Entrambi i giocatori hanno vinto!';
@@ -24,7 +25,7 @@ function lotto(player1, player2) {
     }
 }
 playButton.onclick = function () {
-    var player1 = document.getElementById('player1').value;
-    var player2 = document.getElementById('player2').value;
+    const player1 = document.getElementById('player1').value;
+    const player2 = document.getElementById('player2').value;
     lotto(Number(player1), Number(player2));
 };
