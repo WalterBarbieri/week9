@@ -1,5 +1,5 @@
-window.onload = async function () {
-  await fetch("./Abbigliamento.json", {
+window.onload = function () {
+  fetch("./Abbigliamento.json", {
     method: "GET",
   })
     .then((raw) => {
