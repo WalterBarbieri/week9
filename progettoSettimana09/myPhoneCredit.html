@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WalterWeek9ProgettoSettimanale</title>
+</head>
+<body>
+    <h1>Walter Week9 Progetto Settimanale</h1>
+    <h2>EpicPhone</h2>
+    <form>
+        <fieldset>
+            <legend>Gestisci il tuo credito telefonico</legend>
+            <label for="newCredit">Ricarica</label>
+            <input type="number" name="newCredit" id="newCredit" placeholder="Credito">
+            <label for="call">Durata Chiamata</label>
+            <input type="number" name="call" id="call" placeholder="minuti">
+            <button type="button" id="randomButton">Generatore Random</button>
+            <label for="myCredit">Credito Residuo</label>
+            <input type="number" name="myCredit" id="myCredit" value="0" disabled>
+            <label for="numChiamate">Numero Chiamate Effettuate</label>
+            <input type="number" name="numChiamate" id="numChiamate" value="0" disabled>
+            <button type="button" id="resetButton">Azzera chiamate</button>
+            <button type="button" id="updateButton">Aggiorna</button>
+        </fieldset>
+    </form>
+    <script src="./assets/js/myPhoneCredit.js"></script>    
+</body>
+</html>

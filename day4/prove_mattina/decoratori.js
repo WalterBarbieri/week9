@@ -38,7 +38,7 @@ var __setFunctionName = (this && this.__setFunctionName) || function (f, name, p
     return Object.defineProperty(f, "name", { configurable: true, value: prefix ? "".concat(prefix, " ", name) : name });
 };
 function Logger(constructor) {
-    console.log('Logging...');
+    console.log("Logging...");
     console.log(constructor);
 }
 let Persona = (() => {
@@ -49,7 +49,7 @@ let Persona = (() => {
     var Persona = _classThis = class {
         constructor(_name) {
             this.name = _name;
-            console.log('Creazione persona');
+            console.log("Creazione persona");
         }
     };
     __setFunctionName(_classThis, "Persona");
@@ -60,5 +60,5 @@ let Persona = (() => {
     })();
     return Persona = _classThis;
 })();
-const persone = new Persona('Mario');
+const persone = new Persona("Mario");
 console.log(persone);
